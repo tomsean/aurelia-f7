@@ -1,0 +1,455 @@
+<template>
+    <div class="views tabs toolbar-through">
+        <div class="view" >
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left logo_l">
+                        <a  class="back link external" click.trigger="back()">
+                            <em class="iconfont"></em>
+                        </a>
+                    </div>
+
+                    <div class="center logo_c" style="left: -63px;">
+                        <div data-page="searchbar" style=" width:100%;">
+                            <form data-search-list=".search-here" data-search-in=".item-title" class="searchbar searchbar-init">
+                                <div class="searchbar-input">
+                                    <input type="search" placeholder="请输入技师昵称或编号">
+                                    <a href="#" class="searchbar-clear"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pages navbar-through">
+                <div data-page="tabbar" class="page no-toolbar toolbar-fixed page-on-center">
+
+                    <div class="page-content" style="padding-top:50px; padding-bottom:50px;">
+                        <div class="jszd_sx">
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link smart-select" data-back-on-select="true" data-open-in="popup"  click.trigger="smartSelect($event)">
+                                            <select name="选择服务项目">
+                                                <option value="推拿" selected="selected">推拿</option>
+                                                <option value="调理">调理</option>
+                                                <option value="SPA">SPA</option>
+                                                <option value="护理">护理</option>
+                                            </select>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title" style="display:none">选择服务项目</div>
+                                                    <div class="item-after">推拿</div></div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li style="width:40%;">
+                                        <a href="#" class="item-link smart-select" data-back-on-select="true" data-open-in="popup" click.trigger="">
+                                            <select name="选择性别">
+                                                <option value="女" selected="selected">女</option>
+                                                <option value="男">男</option>
+                                            </select>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title" style="display:none">选择性别</div>
+                                                    <div class="item-after">女</div></div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li style="background-image:none;">
+                                        <a href="#" class="item-link smart-select" data-back-on-select="true" data-open-in="popup" click.trigger="">
+                                            <select name="选择排序">
+                                                <option value="按口碑排序" selected="selected">按口碑排序</option>
+                                                <option value="按距离排序">按距离排序</option>
+                                            </select>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title" style="display:none">选择排序</div>
+                                                    <div class="item-after">按口碑排序</div></div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="jszd_list">
+                            <ul>
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/004.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/005.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/006.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/007.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/008.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/009.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/010.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/004.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/005.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/006.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/007.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/008.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/009.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jszd_nr.html">
+                                        <div class="jszd_list_nr">
+                                            <div class="jszd_list_nr_a">
+                                                <img src="upfile/010.jpg" width="60px" height="60px">
+                                            </div>
+                                            <div class="jszd_list_nr_b">
+                                                <div class="jszd_list_nr_b_01">
+                                                    <h1>拔屌无情</h1>
+                                                    <em class="bg_01"><i class="iconfont"></i>23</em>
+                                                    <strong><b class="iconfont color_05"></b>23.5KM</strong>
+                                                </div>
+                                                <div class="jszd_list_nr_b_02">
+                                                    <span class="bg_03">足疗</span>
+                                                    <span class="bg_04">SPA</span>
+                                                </div>
+                                                <div class="jszd_list_nr_b_03">
+                                                    <span><i class="iconfont"></i>服务区域：荷塘区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- toolbar start -->
+            <div class="toolbar tabbar tabbar-labels">
+                <div class="toolbar-inner">
+                    <a href="#home" class="tab-link ">
+                        <i class="icon iconfont fz_12"></i>
+                        <span class="tab-link-title">首页</span>
+                    </a>
+                    <a href="#news" class="tab-link">
+                        <i class="icon iconfont fz_12">
+                            <span class="badge bg-red">4</span>
+                            </i>
+                        <span class="tab-link-title">消息</span>
+                    </a>
+
+                    <a href="#found" class="tab-link">
+                        <i class="icon iconfont fz_13"></i>
+                        <!--  -->
+                        <span class="tab-link-title">发现</span>
+                    </a>
+                    <a href="#order" class="tab-link">
+                        <i class="icon iconfont fz_14"></i>
+                        <span class="tab-link-title">订单</span>
+                    </a>
+                    <a href="#me" class="tab-link active">
+                        <i class="icon iconfont fz_11"></i>
+                        <span class="tab-link-title">我的</span>
+                    </a>
+                </div>
+            </div>
+            <!-- toolbar end -->
+        </div>
+
+    </div>
+</template>

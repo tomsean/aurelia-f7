@@ -1,0 +1,512 @@
+<template>
+    <div class="views tabs toolbar-through">
+        <div class="navbar">
+            <div class="navbar-inner navbar-on-center">
+                <div class="left logo_l">
+                    <a href="#" class="open-login-screen">
+                        <i class="iconfont"></i>
+                    </a>
+                </div>
+
+                <div class="center sliding logo"
+                     style="left: 6px; transform: translate3d(0px, 0px, 0px); -webkit-transform: translate3d(0px, 0px, 0px);">
+                    <a href="#" data-popup=".demo-popup" class="open-popup" click.trigger="">
+                        <i class="iconfont"></i><span>株洲市</span>
+                    </a>
+                </div>
+
+                <div class="right logo_r">
+                    <a class="link icon-only external"   route-click="route:search"  >
+                        <i class="iconfont"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pages navbar-through toolbar-through">
+            <div data-page="index" class="page page-on-center">
+                <div class="page-content">
+                    <!-- 焦点图开始 -->
+                    <div class="focus">
+                        <div data-pagination=".swiper-pagination-c1" data-loop="true" data-space-between="0" class="swiper-1 swiper-container swiper-init ks-carousel-slider swiper-container-horizontal"
+                             style="height:200px; overflow:hidden;">
+                            <div class="swiper-pagination swiper-pagination-c1"></div>
+                            <div class="swiper-wrapper" >
+                                <div class="swiper-slide"><img src="upfile/001.jpg" class=""></div>
+                                <div class="swiper-slide"><img src="upfile/001.jpg" class=""></div>
+                                <div class="swiper-slide"><img src="upfile/001.jpg" class=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 焦点图结束 -->
+
+                    <!-- 四大分类开始 -->
+                    <div class="modular_01">
+                        <ul>
+                            <li>
+                                <a class="link icon-only external"   route-click="route:search"  >
+                                    <h1 class="iconfont color_01"></h1>
+                                    <span>上门服务</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="link icon-only external"   route-click="route:search"  >
+                                    <h1 class="iconfont color_02"></h1>
+                                    <span>技师直达</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="link icon-only external"   route-click="route:search"  >
+                                    <h1 class="iconfont color_03"></h1>
+                                    <span>预约到店</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="link icon-only external"   route-click="route:search"  >
+                                    <h1 class="iconfont color_04"></h1>
+                                    <span>商家特惠</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 四大分类结束 -->
+
+                    <!-- 分割线开始 -->
+                    <div class="line">
+                        <div class="line_01"></div>
+                        <div class="line_02"></div>
+                    </div>
+                    <!-- 分割线结束 -->
+
+                    <!-- 服务项目开始 -->
+                    <div class="service">
+                        <div data-pagination=".swiper-pagination-c3" data-loop="true" data-space-between="0"
+                             data-slides-per-view="2"
+                             class="swiper-container swiper-init ks-carousel-slider swiper-container-horizontal">
+                            <div class="swiper-wrapper service_ph"
+                                 style="transition-duration: 0ms; -webkit-transition-duration: 0ms; transform: translate3d(-420px, 0px, 0px); -webkit-transform: translate3d(-420px, 0px, 0px);">
+                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5"
+                                     style="width: 210px;">
+                                    <a href="fwxm_nr.html">
+                                        <img src="upfile/003.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                     data-swiper-slide-index="6" style="width: 210px;">
+                                    <a class="link icon-only external"   route-click="route:search"  >
+                                        <img src="upfile/002.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                                     style="width: 210px;">
+                                    <a class="link icon-only external"   route-click="route:search"  >
+                                        <img src="upfile/002.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1"
+                                     style="width: 210px;">
+                                    <a class="link icon-only external"   route-click="route:search"  >
+                                        <img src="upfile/003.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" data-swiper-slide-index="2" style="width: 210px;">
+                                    <a class="link icon-only external"   route-click="route:search"  >
+                                        <img src="upfile/002.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" data-swiper-slide-index="3" style="width: 210px;">
+                                    <a class="link icon-only external"   route-click="route:search"  >
+                                        <img src="upfile/003.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" data-swiper-slide-index="4" style="width: 210px;">
+                                    <a class="link icon-only external"   route-click="route:search"  >
+                                        <img src="upfile/002.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" data-swiper-slide-index="5" style="width: 210px;">
+                                    <a class="link icon-only external"   route-click="route:search"  >
+                                        <img src="upfile/003.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" data-swiper-slide-index="6" style="width: 210px;">
+                                    <a class="link icon-only external"   route-click="route:search"  >
+                                        <img src="upfile/002.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                                     style="width: 210px;">
+                                    <a class="link icon-only external"   route-click="route:search"  >
+                                        <img src="upfile/002.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                                     style="width: 210px;">
+                                    <a class="link icon-only external"   route-click="route:search"  >
+                                        <img src="upfile/003.jpg">
+
+                                        <h1>精致男士养生SPA</h1>
+                                        <span>日式油压，约70分钟</span>
+                                        <em>¥168<i>RMB</i></em>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 服务项目结束 -->
+
+                    <!-- 分割线开始 -->
+                    <div class="line">
+                        <div class="line_01"></div>
+                        <div class="line_02"></div>
+                    </div>
+                    <!-- 分割线结束 -->
+
+                    <!-- 服务项目一开始 -->
+                    <div class="service_01">
+                        <div class="service_01_title">
+                            <h1>身边好技师</h1>
+                        </div>
+                        <div class="pd05">
+                            <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <a class="link icon-only external"   route-click="route:search"  ><img src="upfile/004.jpg"></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <a class="link icon-only external"   route-click="route:search"  ><img src="upfile/005.jpg"></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <a class="link icon-only external"   route-click="route:search"  ><img src="upfile/006.jpg"></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <a class="link icon-only external"   route-click="route:search"  ><img src="upfile/007.jpg"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <a class="link icon-only external"   route-click="route:search"  ><img src="upfile/008.jpg"></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <a class="link icon-only external"   route-click="route:search"  ><img src="upfile/009.jpg"></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <a class="link icon-only external"   route-click="route:search"  ><img src="upfile/010.jpg"></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <a class="link icon-only external"   route-click="route:search"  ><img src="upfile/011.jpg"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 服务项目一结束 -->
+
+                    <!-- 分割线开始 -->
+                    <div class="line">
+                        <div class="line_01"></div>
+                        <div class="line_02"></div>
+                    </div>
+                    <!-- 分割线结束 -->
+
+                    <!-- 服务项目一开始 -->
+                    <div class="service_01">
+                        <div class="service_01_title">
+                            <h1>精选好服务</h1>
+                        </div>
+                        <div class="pd05">
+                            <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/004.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/005.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/006.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/007.jpg">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/008.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/009.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/010.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/011.jpg">
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 服务项目一结束 -->
+
+                    <!-- 分割线开始 -->
+                    <div class="line">
+                        <div class="line_01"></div>
+                        <div class="line_02"></div>
+                    </div>
+                    <!-- 分割线结束 -->
+
+                    <!-- 服务项目一开始 -->
+                    <div class="service_01">
+                        <div class="service_01_title">
+                            <h1>明星好店铺</h1>
+                        </div>
+                        <div class="pd05">
+                            <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/004.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/005.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/006.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/007.jpg">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/008.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/009.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/010.jpg">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="service_01_nr">
+                                            <img src="upfile/011.jpg">
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 服务项目一结束 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- toolbar start -->
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <a href="#home" class="tab-link active external">
+                    <i class="icon iconfont fz_12"></i>
+                    <span class="tab-link-title">首页</span>
+                </a>
+                <a href="#news" class="tab-link external">
+                    <i class="icon iconfont fz_12">
+                        <span class="badge bg-red">4</span>
+                        </i>
+                    <span class="tab-link-title">消息</span>
+                </a>
+
+                <a href="#found" class="tab-link external">
+                    <i class="icon iconfont fz_13"></i>
+                    <!--  -->
+                    <span class="tab-link-title">发现</span>
+                </a>
+                <a href="#order" class="tab-link external">
+                    <i class="icon iconfont fz_14"></i>
+                    <span class="tab-link-title">订单</span>
+                </a>
+                <a href="#me" class="tab-link external">
+                    <i class="icon iconfont fz_11"></i>
+                    <span class="tab-link-title">我的</span>
+                </a>
+            </div>
+        </div>
+        <!-- toolbar end -->
+    </div>
+    <div class="popup demo-popup" style="display: none;">
+        <div class="view navbar-fixed" data-page="searchbar">
+            <div class="pages">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left switch"><i class="iconfont"></i>当前城市</div>
+                        <div class="right switch">
+                            <a href="#zzz" class="link close-popup iconfont lhover" click.trigger=""><em></em></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-page="searchbar" class="page">
+                    <div class="list-block switch_list">
+                        <ul>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <a href="#" class="link close-popup iconfont lhover">
+                                            株洲市<i class="iconfont"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <a href="#" class="link close-popup iconfont lhover">
+                                            醴陵市<i class="iconfont"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <a href="#" class="link close-popup iconfont lhover">
+                                            炎陵县<i class="iconfont"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <a href="#" class="link close-popup iconfont lhover">
+                                            茶陵县<i class="iconfont"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <a href="#" class="link close-popup iconfont lhover">
+                                            攸县<i class="iconfont"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <a href="#" class="link close-popup iconfont lhover">
+                                            株洲县<i class="iconfont"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
